@@ -3,7 +3,7 @@ name = "SigmaOS-ssh-server2"
 tier = 2
 stability = "scaffold"
 language = "rust"
-description = "ssh-server2 component"
+description = "SSH Server ssh server compatibility layer for SigmaOS"
 upstream = []
 
 [contract]
