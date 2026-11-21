@@ -1,16 +1,16 @@
 [component]
-name = "SigmaOS-ssh-server2"
+name = "SigmaOS-ssh-server"
 tier = 2
 stability = "beta"
-language = "rust"
-description = "SSH Server ssh server compatibility layer for SigmaOS"
+language = "shell"
+description = "SigmaOS integration for OpenSSH server: package management, config deployment, and CLI helpers."
 upstream = []
 
 [contract]
-provides = ["component"]
+provides = ["app-manager:ssh-server"]
 depends_on = []
 
 [maturity]
 status = "Implemented"
-test_evidence = "Compiles and passes AAA unit tests"
-next_milestone = "Hardware and runtime integration"
+test_evidence = "test.sh: syntax + metadata + isolated-HOME lifecycle checks"
+next_mestone = "Per-app config polish"
